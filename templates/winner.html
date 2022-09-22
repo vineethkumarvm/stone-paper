@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>winner</title>
+    <script src="https://kit.fontawesome.com/ed9aadd800.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <!-- <h1>{{vineeth}} is winner</h1>
+    <h1>computer:{{computer}} </h1>
+    <h1>player:{{player_move}}</h1> -->
+
+    {% if vineeth == 'tie' %}
+        <h1>It is tie </h1>
+    {% elif vineeth == 'computer' %}
+        <h1>The winner is computer</h1>
+    {% else %}
+        <h1>The winner is Player</h1>
+    {% endif %}
+    
+    
+    {% if player_move == 'paper' %}
+        <h1>Player Choise : <i class="fa-solid fa-hand"></i></h1>
+    {% elif player_move == 'stone' %}
+        <h1>Player Choise : <i class="fa-solid fa-hand-back-fist"></i></h1>
+    {% elif player_move == 'scissor' %}
+        <h1>Player Choise : <i class="fa-solid fa-hand-peace"></i></h1>
+    {% else %}
+        <h1>Player Choise : <i class="fa-solid fa-hand-pointer"></i></h1>
+    {% endif%}
+
+    {% if computer == 'paper' %}
+        <h1>Computer Choise : <i class="fa-solid fa-hand"></i></h1>
+    {% elif computer == 'stone' %}
+        <h1>Computer Choise : <i class="fa-solid fa-hand-back-fist"></i></h1>
+    {% elif computer == 'scissor' %}
+        <h1>Computer Choise : <i class="fa-solid fa-hand-peace"></i></h1>
+    {% else %}
+        <h1>Computer Choise : <i class="fa-solid fa-hand-pointer"></i></h1>
+    {% endif%}
+
+    <div class="play">
+        <a href="{{url_for('index')}}"><button><h3>PLAY AGAIN</h3></button></a>
+    </div>
+
+</body>
+</html>

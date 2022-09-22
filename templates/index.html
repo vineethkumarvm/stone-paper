@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stone paper pencile scissor</title>
+    <script src="https://kit.fontawesome.com/ed9aadd800.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <h1 id="stone">stone paper pencil scissor</h1>
+    <div class="box">
+        <a href="{{url_for('vineeth',choice = 'stone')}}"><button><i class="fa-solid fa-hand-back-fist"></i></button></a>
+        <a href="{{url_for('vineeth',choice = 'paper')}}"><button><i class="fa-solid fa-hand"></i></button></a>
+        <a href="{{url_for('vineeth',choice = 'pencile')}}"><button><i class="fa-solid fa-hand-pointer"></i></button></a>
+        <a href="{{url_for('vineeth',choice = 'scissor')}}"><button><i class="fa-solid fa-hand-peace"></i></button></a>
+    </div>
+</body>
+</html>
